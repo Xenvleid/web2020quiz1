@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; 
+    background-image: linear-gradient(purple, pink, blue)
+  }
+
+  .background_hills {
+    background: url('images/hills.png') 0 0 repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 1920px 100%;
+    animation: background_hills 12s linear infinite;
+  }
+
+  .background_sky {
+    background: url('images/sky.png') 0 0 repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 1920px 100%;
+    animation: background_hills 20s linear infinite;
+  }
+
+  .background_cloud1 {
+    background: url('images/cloud1.png') 0 0 repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    background-size: 1700px 75%;
+    animation: background_hills 25s linear infinite;
+  }
+
+  .background_cloud2 {
+    background: url('images/cloud2.png') 0 0 repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 825px 65%;
+    animation: background_hills 8s linear infinite;
+  }
+
+  .rocky_floor {
+    z-index: 5;
+    background: url('images/rocky_floor.png') 0 0 repeat-x;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 1920px 100%;
+    animation: rocky_floor 5s linear infinite;
+  }
+
+  .moon {
+    margin-left: 330px;
+    margin-top: 100px;
+    background-color: rgb(224, 199, 199);
+    border-radius: 50%;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-size: 95px 95px;
+    -webkit-box-shadow: 0 0 10px #F8A50E;
+    -moz-box-shadow: 0 0 10px #F8A50E;
+         box-shadow: 0 0 10px #F8A50E;
+
+ -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+         border-radius: 50%;
+
+ -webkit-transition: box-shadow .4s ease;
+    -moz-transition: box-shadow .4s ease;
+     -ms-transition: box-shadow .4s ease;
+      -o-transition: box-shadow .4s ease;
+         transition: box-shadow .4s ease;
+}
+
+ .moon:hover {
+    -webkit-box-shadow: 0 0 10px red;
+       -moz-box-shadow: 0 0 10px red;
+            box-shadow: 0 0 0 10px red;
+}
+
+    @keyframes rocky_floor {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -1920px 0;
+    }
+  }
+
+  @keyframes background_hills {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -1920px 0;
+    }
+  }
+
+  @keyframes background_sky {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -1920px 0;
+    }
+  }
